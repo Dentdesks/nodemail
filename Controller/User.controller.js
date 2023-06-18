@@ -125,7 +125,7 @@ const resetPassword = async (req, res) => {
         `,
       };
       await sendEmail(data);
-  
+      console.log(data)
       res.status(200).send({
         msg: "Password has been reset",
       });
